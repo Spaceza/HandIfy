@@ -26,6 +26,11 @@ header {
     gap: 10px;
 }
 
+header button{
+    margin-left: auto; 
+    border-radius: 39rem;   
+}
+
 .linha-vertical {
     width: 2px;
     height: 60%;
@@ -83,10 +88,10 @@ header {
 }
 
 .numeroDoPedido {
-    background-color: #3e2f2f; /* Dark brown background */
+    background-color: #3e2f2f; 
     border-radius: 20px;
     padding: 20px 25px;
-    color: #f9f1e7; /* Light text */
+    color: #f9f1e7; 
     box-sizing: border-box;
 }
 
@@ -98,6 +103,9 @@ header {
     font-size: 1rem;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    background: #3e2f2f;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .rotulo-numero-pedido {
@@ -113,7 +121,8 @@ header {
     font-family: monospace;
     font-size: 1rem;
     user-select: text;
-    max-width: 100%;        
+    max-width: 100%;
+    color: #fff;        
 }
 
 .botao-copiar {
@@ -128,6 +137,13 @@ header {
 
 .botao-copiar:hover {
     background-color: #d9cbbf;
+}
+
+.retorn{
+    border: none;
+    padding: 10px 15px;
+    background: #3e2f2f ;
+    color: #f9f1e7;
 }
 
 

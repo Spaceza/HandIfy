@@ -1,49 +1,60 @@
-// Lista de produtos com detalhes e status
-const produtos = [
-    {
-        id: 1,
-        nome: "Bolsa de palha",
-        descricao: "Com design artesanal e natural, essa bolsa de palha é ideal para compor looks casuais ou praianos. Leve, prática e versátil, combina elegância e funcionalidade em qualquer ocasião.",
-        imagem: "../images/produtos/bolsa-de-palha.png",
-        numeroPedido: "SP-250513-87439218"
-    },
-    {
-        id: 2,
-        nome: "Escultura de pato de madeira",
-        descricao: "Escultura de pato rústico em madeira, com acabamento natural em tons terrosos e detalhes sutis nas asas em preto. Perfeita para decoração de ambientes com temática campestre ou retrô.",
-        imagem: "../images/produtos/pato.png",
-        numeroPedido: "SP-123456-78901234"
-    }
-];
+import { products } from '../database.js';
 
-// Função para renderizar a lista de produtos clicáveis
+function copyOrderNumber() {
+    const numeroPedido = document.getElementById('numeroPedido').textContent;
+    const mensagemElemento = document.getElementById('mensagem-copiar');
+    navigator.clipboard.writeText(numeroPedido).then(() => {
+        if (!mensagemElemento) {
+            const msg = document.createElement('span');
+            msg.id = 'mensagem-copiar';
+            msg.style.color = '#3e2f2f';
+            msg.style.marginLeft = '10px';
+            msg.textContent = 'Número do pedido copiado!';
+            document.querySelector('.cabecalho-rastreio').appendChild(msg);
+        } else {
+            mensagemElemento.textContent = 'Número do pedido copiado!';
+        }
+    }).catch(() => {
+        if (!mensagemElemento) {
+            const msg = document.createElement('span');
+            msg.id = 'mensagem-copiar';
+            msg.style.color = 'red';
+            msg.style.marginLeft = '10px';
+            msg.textContent = 'Falha ao copiar o número do pedido.';
+            document.querySelector('.cabecalho-rastreio').appendChild(msg);
+        } else {
+            mensagemElemento.textContent = 'Falha ao copiar o número do pedido.';
+        }
+    });
+}
+
 function renderizarListaProdutos() {
     const container = document.createElement('div');
     container.id = 'lista-produtos';
     container.style.marginBottom = '20px';
 
-    produtos.forEach(produto => {
+    products.forEach((produto, index) => {
         const btn = document.createElement('button');
-        btn.onclick = () => mostrarProduto(produto.id);
+        btn.textContent = produto.name;
+        btn.onclick = () => mostrarProduto(index);
         container.appendChild(btn);
     });
     const containerPrincipal = document.querySelector('.container-principal');
     containerPrincipal.insertBefore(container, containerPrincipal.firstChild);
 }
 
-// Função para mostrar os detalhes do produto selecionado
-function mostrarProduto(id) {
-    const produto = produtos.find(p => p.id === id);
+function mostrarProduto(index) {
+    const produto = products[index];
     if (!produto) return;
 
-    document.getElementById('imagem-produto').src = produto.imagem;
-    document.getElementById('imagem-produto').alt = produto.nome;
-    document.getElementById('nome-produto').textContent = produto.nome;
-    document.getElementById('descricao-produto').textContent = produto.descricao || '';
-    document.getElementById('numeroPedido').textContent = produto.numeroPedido;
+    document.getElementById('imagem-produto').src = produto.img;
+    document.getElementById('imagem-produto').alt = produto.name;
+    document.getElementById('nome-produto').textContent = produto.name;
+    document.getElementById('descricao-produto').textContent = produto.description || '';
+    document.getElementById('numeroPedido').textContent = produto.trackingCode || '';
 }
-// Inicializa a página com o primeiro produto selecionado e renderiza a lista
+
 window.onload = () => {
     renderizarListaProdutos();
-    mostrarProduto(produtos[0].id);
+    mostrarProduto(0);
 };
