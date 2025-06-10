@@ -26,6 +26,50 @@ export const products = [
         avaliacoes: 97,
     },
     {
+        name: "Bolsa de Palha Praia Feminina",
+        category: "Bolsa",
+        slug: "bolsa-de-palha-praia-feminina",
+        img: "../images/produtos/bolsas/bolsa-palha-clara.png",
+        price: "R$95,99",
+        originalPrice: "R$95,99",
+        discount: 0, // Sem desconto
+        nota: 4.8,
+        avaliacoes: 65,
+    },
+    {
+        name: "Bolsa Praia Linda Palha Feminina Com Zíper + Pigente",
+        category: "Bolsa",
+        slug: "bolsa-praia-linda-palha-feminina-com-ziper-pigente",
+        img: "../images/produtos/bolsas/bolsa.png",
+        price: "R$42,99",
+        originalPrice: "R$42,99",
+        discount: 0, // Sem desconto
+        nota: 4.3,
+        avaliacoes: 4,
+    },
+    {
+        name: "Bolsa de Palha Feminina Clutch",
+        category: "Bolsa",
+        slug: "bolsa-de-palha-feminina-clutch",
+        img: "../images/produtos/bolsas/bolsa-menor.png",
+        price: "R$46,99",
+        originalPrice: "R$46,99",
+        discount: 0, // Sem desconto
+        nota: 4.6,
+        avaliacoes: 20,
+    },
+    {
+        name: "Bolsa Feminina De Palha Lua Grande",
+        category: "Bolsa",
+        slug: "bolsa-feminina-de-palha-lua-grande",
+        img: "../images/produtos/bolsas/bolsa-maior.png",
+        price: "R$78,99",
+        originalPrice: "R$78,99",
+        discount: 0, // Sem desconto
+        nota: 4.4,
+        avaliacoes: 50,
+    },
+    {
         name: "Bolsa de Rattan Redonda Couro Artesanal Praia Mar Verão Vime",
         category: "Bolsa",
         slug: "bolsa-rattan-redonda",
