@@ -59,9 +59,9 @@ export const products = [
         avaliacoes: 20,
     },
     {
-        name: "Bolsa Feminina De Palha Lua Grande",
+        name: "Bolsa Feminina De Palha Meia Lua Grande",
         category: "Bolsa",
-        slug: "bolsa-feminina-de-palha-lua-grande",
+        slug: "bolsa-feminina-de-palha-meia-lua-grande",
         img: "../images/produtos/bolsas/bolsa-maior.png",
         price: "R$78,99",
         originalPrice: "R$78,99",
@@ -150,7 +150,7 @@ export const products = [
         avaliacoes: 29,
     },
     {
-        name: "Porta-Retratos",
+        name: "Porta-retratos",
         category: "Decoracao",
         slug: "porta-retratos",
         img: "../images/produtos/decoracoes/Quadro.png",
@@ -186,7 +186,7 @@ export const products = [
         avaliacoes: 65,
     },
     {
-        name: "Utensílios de cozinha bambu 6 peças",
+        name: "Utensílios de Cozinha Bambu 6 peças",
         category: "Utensilios",
         slug: "utensilios-de-cozinha-bambu-6-pecas",
         img: "../images/produtos/utensilios/suporte-bambu-6pc.png",
@@ -208,7 +208,7 @@ export const products = [
         avaliacoes: 54,
     },
     {
-        name: "Suporte de faqueiros",
+        name: "Suporte de Faqueiros",
         category: "Utensilios",
         slug: "suporte-de-faqueiros",
         img: "../images/produtos/utensilios/faqueiro.png",

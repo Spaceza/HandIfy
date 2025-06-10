@@ -12,7 +12,7 @@ body {
 
 header {
     font-family: "Alexandria", sans-serif;
-    background-color: #fff;
+    background-color: white;
     border-bottom: 2px solid #5a3e36;
     padding: 10px 20px;
 }
@@ -61,7 +61,7 @@ header nav ul li a.entrar i {
     display: flex;
     align-items: center;
     background-color: #5a3e36;
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     border-radius: 20px;
     padding: 5px 10px;
     width: 30rem;
@@ -70,7 +70,7 @@ header nav ul li a.entrar i {
 }
 
 .search-bar i {
-    color: rgb(255, 255, 255);
+    color: white;
     cursor: pointer;
 }
 
@@ -111,7 +111,7 @@ nav ul li a {
 
 nav ul li a.entrar {
     background-color: #5a3e36;
-    color: #fff;
+    color: white;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -133,7 +133,7 @@ nav ul li a.entrar {
 
 .menu-bar button {
     background-color: #5a3e36;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 0.6rem 0.6rem 0 0;
     font-size: 14px;
@@ -148,15 +148,13 @@ nav ul li a.entrar {
 }
 
 .menu-bar dbutton:hover {
-    background-color: #000000;
+    background-color: black;
 }
 
-/* CSS para a página de compra de produtos */
 .product-page {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     justify-content: space-between;
     height: 65vh;
     background-color: white;
@@ -169,7 +167,6 @@ nav ul li a.entrar {
     gap: 1rem;
     margin-bottom: 2rem;
 }
-
 
 .product-gallery .main-image img {
     width: 320px;
@@ -189,13 +186,6 @@ nav ul li a.entrar {
     margin: 0;
 }
 
-.sair {
-    background-color: #5a3e36;
-    border: none;
-    color: white;
-    border-radius: 2rem;
-    cursor: pointer;
-}
 
 .product-details .price {
     display: flex;
@@ -214,7 +204,7 @@ nav ul li a.entrar {
 .product-details .price .old-price {
     text-decoration: line-through;
     font-size: 1.3rem;
-    color: #ff0000;
+    color: red;
     margin-right: 0.5rem;
 }
 
@@ -225,7 +215,7 @@ nav ul li a.entrar {
 }
 
 .product-details .payment-methods {
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -241,18 +231,17 @@ nav ul li a.entrar {
 }
 
 .color {
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
-
 }
 
 .handle-color {
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
 }
 
 .material {
-    color: rgb(0, 0, 0);
+    color: black;
     font-weight: bold;
 }
 
@@ -260,7 +249,7 @@ nav ul li a.entrar {
     background-color: #78452B;
     width: 10rem;
     border-radius: 0.4rem;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
 }
 
@@ -268,14 +257,13 @@ nav ul li a.entrar {
     background-color: #75350C;
     width: 12rem;
     border-radius: 0.4rem;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
 }
 
 .palha {
     border: solid #FFB789;
     border-radius: 1rem;
-
 }
 
 .purchase-info {
@@ -319,7 +307,7 @@ nav ul li a.entrar {
 .purchase-buttons button {
     background-color: #392621;
     width: 20rem;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 1rem;
     padding: 1rem;
@@ -328,11 +316,11 @@ nav ul li a.entrar {
 }
 
 .purchase-buttons button:hover {
-    background-color: #000000;
+    background-color: black;
 }
 
 .ofertas {
-    background-color: #fff;
+    background-color: white;
     padding: 1rem;
     border-radius: 10px;
     border-radius: 1rem;
@@ -341,7 +329,7 @@ nav ul li a.entrar {
 
 .other-offers h2 {
     font-size: 3rem;
-    color: #000000;
+    color: black;
     margin-bottom: 1rem;
 }
 
@@ -370,23 +358,6 @@ nav ul li a.entrar {
     border-radius: 5px;
 }
 
-/* .card3 h5 {
-    text-align: flex-start;
-}
-
-.card3 {
-    margin-bottom: 2.4rem;
-}
-
-.card4 h5 {
-    font-size: 1.2rem;
-    text-align: flex-start;
-}
-
-.card4 p {
-    margin-top: 1.8rem;
-} */
-
 .descricao-produto {
     margin: 2rem 0;
     padding: 1rem;
@@ -396,7 +367,7 @@ nav ul li a.entrar {
 
 .descricao-produto h2 {
     font-size: 2.8rem;
-    color: #000000;
+    color: black;
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -416,7 +387,7 @@ nav ul li a.entrar {
 
 .produto-reviews h2 {
     font-size: 2.7rem;
-    color: #000000;
+    color: black;
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -432,8 +403,23 @@ nav ul li a.entrar {
     color: #5a3e36;
 }
 
-span i {
+p i {
     color: rgb(253, 189, 49)
+}
+
+.avaliar i {
+    color: rgb(253, 189, 49);
+}
+
+.sair {
+    background-color: #5a3e36;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.sair i {
+    color: white;
 }
 
 .reviews-destaque {
@@ -444,13 +430,13 @@ span i {
 
 .reviews-destaque .opn {
     font-size: 2.7rem;
-    color: #000000;
+    color: black;
     font-weight: bold;
 }
 
 .reviews-destaque .review {
     background-color: #4B3A35;
-    color: #fff;
+    color: white;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -474,14 +460,14 @@ span i {
 
 .ofertas h2 {
     font-size: 2.7rem;
-    color: #000000;
+    color: black;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
 .Produtos-similares {
     margin: 2rem;
-    background-color: #fff;
+    background-color: white;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -527,7 +513,7 @@ footer {
     display: flex;
     font-size: 0.9rem;
     text-align: center;
-    background-color: #fff;
+    background-color: white;
     border-top: 1px solid #ddd;
     flex-direction: row;
     justify-content: space-between;
@@ -570,13 +556,13 @@ footer .social-icons a i {
     right: 20px;
     width: 400px;
     height: 490px;
-    background: #ffffff;
+    background: white;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     padding: 0.2rem 0.2rem;
     z-index: 9999
-
 }
+
 .popup-list {
     flex-direction: column;
     gap: 2.5rem;
@@ -618,7 +604,7 @@ footer .social-icons a i {
     margin: 0.7rem 0;
     width: 9rem;
     background-color: #5a3e36;
-    color: #fff;
+    color: white;
 
     border-radius: 16px;
     text-align: center;
@@ -711,7 +697,7 @@ footer .social-icons a i {
 .popup-remove-btn {
     background: #5a3e36;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 0.95rem;
     cursor: pointer;
     margin-left: 0.7rem;
@@ -722,7 +708,7 @@ footer .social-icons a i {
 
 .popup-remove-btn:hover {
     background: #392621;
-    color: #fff;
+    color: white;
 }
 
 /* Popup Produto (Carrinho) */
@@ -757,7 +743,8 @@ footer .social-icons a i {
     margin: 0;
     text-align: left;
 }
-#popup-lista-mob{
+
+#popup-lista-mob {
     display: none;
 }
 
@@ -769,7 +756,7 @@ footer .social-icons a i {
 }
 
 .preco-destaque {
-    color: #000;
+    color: black;
     font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
@@ -777,7 +764,7 @@ footer .social-icons a i {
 
 .preco-riscado {
     text-decoration: line-through;
-    color: #ff0000;
+    color: red;
     font-size: 1.0rem;
     font-weight: bold;
     text-align: left;
@@ -794,7 +781,7 @@ footer .social-icons a i {
     right: 10px;
     top: 10px;
     z-index: 11;
-    background: #fff;
+    background: white;
     color: #5a3e36;
     border: 1px solid #5a3e36;
 }
@@ -809,7 +796,7 @@ footer .social-icons a i {
     transform: translateX(-50%);
     bottom: -38px;
     width: max-content;
-    background: #fff;
+    background: white;
     border-radius: 1.2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: 2px 12px;
@@ -821,7 +808,7 @@ footer .social-icons a i {
     padding: 0 7px;
     font-size: 1rem;
     border-radius: 50%;
-    background: #fff;
+    background: white;
     color: #5a3e36;
     border: 1px solid #5a3e36;
 }
@@ -831,33 +818,34 @@ footer .social-icons a i {
     text-align: center;
     color: #5a3e36;
     font-weight: bold;
-    background: #fff;
+    background: white;
     border-radius: 0.5rem;
     padding: 2px 8px;
 }
+
 #popup-menu-list {
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  padding: 1.2rem 1.2rem;
-  z-index: 2000;
-  display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1.2rem;
+    z-index: 2000;
+    display: none;
 }
 
 #popup-menu-list .popup-list-mob a {
-  display: block;
-  margin: 0.7rem 0;
-  background: #5a3e36;
-  color: #fff;
-  padding: 0.7rem 1.2rem;
-  border-radius: 16px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1rem;
+    display: block;
+    margin: 0.7rem 0;
+    background: #5a3e36;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 
@@ -869,6 +857,7 @@ footer .social-icons a i {
         flex-wrap: nowrap;
         width: 100%;
     }
+
     #popup-produto-img {
         width: 60px;
         height: 60px;
@@ -883,7 +872,7 @@ footer .social-icons a i {
         gap: 0.05rem;
     }
 
-   
+
     .cont_pop_precos {
         display: flex;
         flex-direction: column;
@@ -892,7 +881,7 @@ footer .social-icons a i {
     }
 
     .preco-destaque {
-        color: #000;
+        color: black;
         font-size: 1rem;
         font-weight: bold;
         text-align: left;
@@ -900,7 +889,7 @@ footer .social-icons a i {
 
     .preco-riscado {
         text-decoration: line-through;
-        color: #ff0000;
+        color: red;
         font-size: 0.7rem;
         font-weight: bold;
         text-align: left;
@@ -916,7 +905,7 @@ footer .social-icons a i {
         right: 10px;
         top: 10px;
         z-index: 11;
-        background: #fff;
+        background: white;
         color: #5a3e36;
         border: 1px solid #5a3e36;
     }
@@ -952,15 +941,16 @@ footer .social-icons a i {
     .sub_text_tablet {
         display: none;
     }
+
     .preco-riscado {
         font-size: 0.8rem;
         margin-left: 0;
     }
-    #popup-produto-nome{
+
+    #popup-produto-nome {
         font-size: 0.75rem;
         margin-right: 0.5rem;
-    } 
-
+    }
 }
 
 @media (max-width: 1018px) {
@@ -1076,7 +1066,7 @@ footer .social-icons a i {
     .product-details .price .old-price {
         text-decoration: line-through;
         font-size: 1.0rem;
-        color: #ff0000;
+        color: red;
         margin-right: 0.5rem;
     }
 
@@ -1099,11 +1089,12 @@ footer .social-icons a i {
     .sub_text_tablet {
         display: none;
     }
-    #popup-produto-nome{
+
+    #popup-produto-nome {
         font-size: 0.7rem;
         margin-right: 0.5rem;
-    } 
-    
+    }
+
 }
 
 @media (max-width: 934px) {
@@ -1119,18 +1110,19 @@ footer .social-icons a i {
     .sub-card-text {
         font-size: 1.6rem;
     }
-    #popup-menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 380px;
-    height: 490px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    padding: 0.2rem 0.2rem;
 
-}
+    #popup-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 380px;
+        height: 490px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        padding: 0.2rem 0.2rem;
+
+    }
 
     .Produtos-similares img {
         width: 150px;
@@ -1156,14 +1148,16 @@ footer .social-icons a i {
     .sub_text_tablet {
         display: none;
     }
+
     .preco-riscado {
         font-size: 0.8rem;
         margin-left: 0;
     }
-    #popup-produto-nome{
+
+    #popup-produto-nome {
         font-size: 0.68rem;
         margin-right: 0.5rem;
-    } 
+    }
 }
 
 @media (max-width: 832px) {
@@ -1214,7 +1208,7 @@ footer .social-icons a i {
         object-fit: contain;
         border-radius: 10px;
     }
-      
+
 
     .botoes_adc {
         display: none;
@@ -1227,6 +1221,7 @@ footer .social-icons a i {
     .sub_text_tablet {
         display: none;
     }
+
     .preco-riscado {
         font-size: 0.8rem;
         margin-left: 0;
@@ -1241,10 +1236,12 @@ footer .social-icons a i {
     .other-offers .card-title {
         font-size: 1.0rem;
     }
-    #popup-produto-nome{
+
+    #popup-produto-nome {
         font-size: 0.57rem;
         margin-right: 0.5rem;
     }
+
     .preco-riscado {
         font-size: 0.8rem;
         margin-left: 0;
@@ -1283,18 +1280,19 @@ footer .social-icons a i {
     .Produtos-similares h5 {
         font-size: 1.2rem;
     }
-    #popup-menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 350px;
-    height: 490px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    padding: 0.2rem 0.2rem;
 
-}
+    #popup-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 350px;
+        height: 490px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        padding: 0.2rem 0.2rem;
+
+    }
 
     .Produtos-similares img {
         width: 100px;
@@ -1314,7 +1312,7 @@ footer .social-icons a i {
 
     .botoes_adc button {
         background-color: #392621;
-        color: #fff;
+        color: white;
         width: 13rem;
         height: 3.5rem;
         border: none;
@@ -1375,7 +1373,7 @@ footer .social-icons a i {
 
     .botoes_adc button {
         background-color: #392621;
-        color: #fff;
+        color: white;
         width: 13rem;
         height: 3.5rem;
         border: none;
@@ -1410,7 +1408,7 @@ footer .social-icons a i {
 @media (max-width: 665px) {
     .botoes_adc button {
         background-color: #392621;
-        color: #fff;
+        color: white;
         width: 13rem;
         height: 3.5rem;
         border: none;
@@ -1461,9 +1459,10 @@ footer .social-icons a i {
         border: none;
         background: none;
     }
-    #popup-lista-mob{
-    display: block;
-}
+
+    #popup-lista-mob {
+        display: block;
+    }
 
 
     .product-details {
@@ -1482,14 +1481,15 @@ footer .social-icons a i {
 
     .botoes_adc button {
         background-color: #392621;
-        color: #fff;
+        color: white;
         border: none;
         width: 90%;
         border-radius: 1rem;
         font-size: 0.85rem;
         margin-left: 0;
     }
-    .pop_up p{
+
+    .pop_up p {
         font-size: 0.7rem;
         margin: 0;
     }
@@ -1504,29 +1504,33 @@ footer .social-icons a i {
         margin: 0;
         position: relative;
     }
-     #popup-menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 315px;
-    height: 490px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    padding: 0.2rem 0.2rem;
 
-}
-.popup-remove-btn{
-    font-size: 0.59rem;
-    margin-right: -0.5rem;
-    padding: 0.2rem 0.4rem;
-    border-radius: 1.2rem;
-}
-#popup-produto-nome{
+    #popup-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 315px;
+        height: 490px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        padding: 0.2rem 0.2rem;
+
+    }
+
+    .popup-remove-btn {
+        font-size: 0.59rem;
+        margin-right: -0.5rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 1.2rem;
+    }
+
+    #popup-produto-nome {
         font-size: 0.63rem;
         margin-right: 0.5rem;
     }
-.cont_pop_info {
+
+    .cont_pop_info {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -1534,6 +1538,7 @@ footer .social-icons a i {
         margin-left: -1.5rem;
         gap: 0.05rem;
     }
+
     .add-to-cart {
         margin-right: 0;
     }
@@ -1593,7 +1598,6 @@ footer .social-icons a i {
         font-size: 1.4rem;
         border: none;
         background: none;
-
     }
 
     .menu_clc {
@@ -1644,7 +1648,7 @@ footer .social-icons a i {
     }
 
     .carrossel-container {
-        background-color: #ffffff;
+        background-color: white;
         border: solid #5a3e36;
         border-radius: 3rem;
         display: flex;
@@ -1652,7 +1656,7 @@ footer .social-icons a i {
         justify-content: center;
         gap: 0;
         position: relative;
-        width:100%;
+        width: 100%;
         max-width: 100vw;
         margin: 0 auto 2rem auto;
         overflow-x: hidden;
@@ -1714,17 +1718,19 @@ footer .social-icons a i {
         justify-content: center;
         z-index: 2;
         border-radius: 50%;
-        background: #fff;
+        background: white;
         border: 3px solid #5a3e36;
         color: #5a3e36;
-        box-shadow: 0 2px 8px rgba(90,62,54,0.08);
+        box-shadow: 0 2px 8px rgba(90, 62, 54, 0.08);
         transition: background 0.2s, color 0.2s;
         margin: 0 8px;
         cursor: pointer;
     }
-    .carrossel-arrow:active, .carrossel-arrow:focus {
+
+    .carrossel-arrow:active,
+    .carrossel-arrow:focus {
         background: #5a3e36;
-        color: #fff;
+        color: white;
         outline: none;
     }
 }
@@ -1735,17 +1741,18 @@ footer .social-icons a i {
         justify-content: space-between;
         display: block;
     }
-    .pop_up p{
+
+    .pop_up p {
         font-size: 0.63rem;
         margin: 0;
     }
 
 
-    .menu_clc button{
+    .menu_clc button {
         color: #392621;
     }
 
-    .Produtos-similares h1{
+    .Produtos-similares h1 {
         font-size: 1.7rem;
     }
 
@@ -1754,7 +1761,7 @@ footer .social-icons a i {
         margin-bottom: 0.5rem;
     }
 
-    .social-icons{
+    .social-icons {
         font-size: 0.5rem;
     }
 
@@ -1766,26 +1773,27 @@ footer .social-icons a i {
         font-size: 1.1rem;
     }
 
-    .carrossel-container{
+    .carrossel-container {
         width: 99%;
     }
 
     .sub-card-text {
         font-size: 2rem;
     }
-     #popup-menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 285px;
-    height: 490px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    padding: 0.2rem 0.2rem;
 
-}
-#popup-produto-nome{
+    #popup-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 285px;
+        height: 490px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        padding: 0.2rem 0.2rem;
+    }
+
+    #popup-produto-nome {
         font-size: 0.6rem;
         margin-right: 0.5rem;
     }
